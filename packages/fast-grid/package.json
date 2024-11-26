@@ -1,0 +1,27 @@
+{
+  "name": "@repo/fast-grid",
+  "version": "0.0.1",
+  "type": "module",
+  "private": false,
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.mjs",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsc",
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/timsort": "^0.3.3",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "apache-arrow": "^18.0.0",
+    "fast-sort": "^3.4.1",
+    "main-thread-scheduling": "8.0.0",
+    "timsort": "^0.3.0",
+    "tsup": "^8.3.5"
+  }
+}
