@@ -1,14 +1,21 @@
 {
-  "name": "test",
+  "name": "fast-grid",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "ts": "tsc --watch --noEmit",
-    "predeploy": "cd example && npm run build"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc --noEmit",
+    "predeploy": "cd example && npm run build",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\""
   },
   "devDependencies": {
+    "tsup": "^8.3.5",
     "typescript": "5.0.2",
-    "vite": "4.3.2"
+    "vite": "4.3.2",
+    "prettier": "^3.2.5"
   },
   "dependencies": {
     "@types/timsort": "^0.3.1",
