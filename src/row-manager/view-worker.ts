@@ -24,6 +24,8 @@ const filterRows = async ({
   const lowerCaseFilter: Record<number, string> = Object.fromEntries(
     Object.entries(filter).map(([k, v]) => [k, v.toLowerCase()])
   );
+  console.log("filterRows", filter);
+  
 
   const MIN_RESULTS_EARLY_RESULT = 50;
   const ROW_CHUNK_SIZE = 30000;

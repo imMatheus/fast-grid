@@ -26,6 +26,9 @@ export class StringCell implements CellComponent {
     this.id = id;
     this._offset = offset;
 
+    console.log('hej');
+    
+
     this.el = document.createElement("div");
     // NOTE(gab): fonts are super expensive, might be more simple fonts that are faster to render? testing to render a cursive text with subpixel antialiasing, vs
     // rendering monospace text with text smoothing
