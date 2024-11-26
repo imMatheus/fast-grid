@@ -2,9 +2,8 @@ import { Grid } from "../grid";
 import { Rows } from "../row";
 import { isEmptyFast } from "../utils/is-empty-fast";
 import { ComputeViewEvent, SetRowsEvent } from "./view-worker";
-import ViewWorker from "./view-worker?worker&inline";
 
-const viewWorker = new ViewWorker();
+const viewWorker = new Worker("./view-worker.js");
 
 // const prevFilterMs: number[] = [];
 
