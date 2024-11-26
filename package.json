@@ -6,6 +6,7 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
+    "ts": "tsc --watch --noEmit",
     "build": "tsup",
     "build:watch": "tsup --watch",
     "lint": "tsc --noEmit",

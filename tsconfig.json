@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "noEmit": true,
 
+    "outDir": "dist",
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
