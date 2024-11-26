@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "private": false,
-  "main": "./dist/src/index.js",
-  "module": "./dist/src/index.mjs",
-  "types": "./dist/src/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsc",
