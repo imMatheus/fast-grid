@@ -3,7 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "../src/**/*.{js,ts,jsx,tsx}", // obv fix this, should not use tailwind in package
+    "../../packages/fast-grid/src/**/*.{js,ts,jsx,tsx}", // obv fix this, should not use tailwind in package
   ],
   theme: {
     extend: {
