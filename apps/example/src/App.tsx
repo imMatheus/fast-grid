@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Stats from "stats.js";
 import { Analytics } from "@vercel/analytics/react";
 import { FilterCell, Grid } from "@repo/fast-grid";
+import "@repo/fast-grid/style.css";
 import { COLUMNS, generateRows } from "./generateRows";
 import { useState, useRef, useEffect } from "react";
 

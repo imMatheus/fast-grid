@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "module": "ES6",
+    "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable", "WebWorker"],
     "skipLibCheck": true,
 
@@ -10,11 +10,8 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
     "declaration": true,
-
-    "outDir": "dist",
-    "rootDir": ".",
+    "declarationDir": "./dist",
 
     /* Linting */
     "strict": true,
@@ -22,5 +19,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["./src", "index.ts"]
+  "include": ["src"]
 }
